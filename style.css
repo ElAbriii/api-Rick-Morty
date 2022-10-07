@@ -27,14 +27,16 @@ h1{
     1px 22px 10px rgb(21, 177, 102),
     1px 25px 35px rgba(21, 177, 102),
     1px 30px 60px rgba(16,16,16,0.4);
+    z-index: 1;
 }
 
 body{
     background-color: rgb(17, 76, 76);
     height: 100vh;
-    background-position: center;
+  background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+   
     font-family: 'Comforter Brush', cursive;
     display: flex;
     flex-direction: column;
@@ -43,10 +45,10 @@ body{
 
 
 .background-container {
-    position: relative;
+    position: absolute;
     background-color: black;
-    background-size: cover;
     display: flex;
+    width: 100%;
     height: 100%;
     justify-content: center;
     align-items: center;
@@ -60,9 +62,9 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 1;
+    z-index: 0;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-size: cover;
     animation: backgroundAnimation 100s linear infinite;
 }
@@ -123,6 +125,7 @@ button{
     width: 2.5rem;
     border: none;
 }
+
 .next {
     clip-path: ellipse(47% 38% at 52% 50%);
     background-color: rgba(22, 255, 123, 0.885);
