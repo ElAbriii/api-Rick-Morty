@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Silkscreen:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 700;
+    color: #5bf917;
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+    1px 18px 6px rgba(21, 177, 102),
+    1px 22px 10px rgb(21, 177, 102),
+    1px 25px 35px rgba(21, 177, 102),
+    1px 30px 60px rgba(16,16,16,0.4);
+}
+
+body{
+    background-color: rgb(17, 76, 76);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Comforter Brush', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.background-container {
+    position: relative;
+    background-color: black;
+    background-size: cover;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+  
+.background-animation {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    animation: backgroundAnimation 100s linear infinite;
+}
+
+@keyframes backgroundAnimation {
+  0% {background-image: url("https://p4.wallpaperbetter.com/wallpaper/168/900/28/rick-and-morty-vector-graphics-car-rainbows-wallpaper-preview.jpg");opacity: 1;}
+  10% {background-image: url("https://p4.wallpaperbetter.com/wallpaper/73/16/9/rick-and-morty-rick-sanchez-morty-smith-no-man-s-sky-wallpaper-preview.jpg");opacity: 1;}
+  20% {background-image: url("https://wallpapercave.com/uwp/uwp410700.jpeg");opacity: 1;}
+  30% {background-image: url("https://preview.redd.it/svg0cs94b2m71.jpg?width=960&crop=smart&auto=webp&s=222721e36454c646d3b4d823a09b5ead090ccb78");opacity: 1;}
+  40% {background-image: url("https://p4.wallpaperbetter.com/wallpaper/727/296/877/rick-and-morty-sunset-rick-sanchez-delorean-wallpaper-preview.jpg");opacity: 1;}
+  50% {background-image: url("https://p4.wallpaperbetter.com/wallpaper/364/740/974/tv-show-rick-and-morty-morty-smith-planet-rick-sanchez-hd-wallpaper-preview.jpg");opacity: 1;}
+  60% {background-image: url("https://p4.wallpaperbetter.com/wallpaper/979/756/6/rick-and-morty-tv-adult-swim-rick-sanchez-wallpaper-preview.jpg");opacity: 1;}
+  70% {background-image: url ("https://p4.wallpaperbetter.com/wallpaper/588/5/300/rick-and-morty-toilets-hd-wallpaper-preview.jpg");opacity: 1;}  
+  80% {background-image: url ("https://p4.wallpaperbetter.com/wallpaper/703/431/643/rick-and-morty-floating-heads-tv-wallpaper-preview.jpg");opacity: 1;}  
+  90% {background-image: url ("https://p4.wallpaperbetter.com/wallpaper/806/853/228/tv-show-rick-and-morty-mr-meeseeks-rick-and-morty-hd-wallpaper-preview.jpg");opacity: 1;}  
+  100% {background-image: url ("https://p4.wallpaperbetter.com/wallpaper/916/39/710/tv-show-rick-and-morty-space-wallpaper-preview.jpg");opacity: 1;}  
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
+}
+
+.img-container {
+    max-width: 14rem;
+    display: flex;
+    margin: 1rem;
+    
+}
+
+#container {
+    margin: 1rem;
+    background-color: rgba(148, 223, 233, 0.3);
+    backdrop-filter: blur(2px);
+    border: 2px solid rgba(168, 224, 228, 0.625);
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    margin: auto;   
+}
+
+.container-buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+button{
+    background-image: url(https://w0.peakpx.com/wallpaper/896/76/HD-wallpaper-rick-and-morty-portal-rick-portal-green-fecklessabandon-feckless.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 4rem;
+    width: 2.5rem;
+    border: none;
+}
+.next {
+    clip-path: ellipse(47% 38% at 52% 50%);
+    background-color: rgba(22, 255, 123, 0.885);
+}
+
+.preview {
+    clip-path: ellipse(47% 38% at 52% 50%);
+    background-color: rgba(22, 255, 123, 0.885);
+}
+
+.next:hover {
+    background-color: rgba(255, 22, 22, 0.885);
+}
+
+.preview:hover {
+    background-color: rgba(255, 22, 22, 0.885);
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.4);
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+
+.tittle-api{
+        font-family: 'Silkscreen', cursive;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.data-api{
+    font-family: 'Abel', sans-serif;
+    color:greenyellow;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.rick{
+    height: 15rem;
+    width: 8rem;
+    position: absolute;
+    bottom: 0;
+    left: 10rem;
+}
+
+.morty{
+    height: 12rem;
+    width: 12rem;
+    position: absolute;
+    bottom: 0;
+    right: 10rem;
+}
+
+.text-cont-tittle{
+    width: 15rem;
+    text-align: center;
+}
